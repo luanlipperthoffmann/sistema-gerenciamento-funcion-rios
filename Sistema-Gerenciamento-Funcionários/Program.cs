@@ -15,7 +15,15 @@ int opcao = Convert.ToInt32(Console.ReadLine());
 switch (opcao >=1 || opcao <=6)
 {
     case 1:
-        FuncionarioTempoIntegral
+        System.Console.WriteLine("Informe o nome do funcionário:");
+        string Nome = Console.ReadLine();
+        System.Console.WriteLine("Informe a matricula do funcionário:");
+        int Matricula = Convert.ToInt32(Console.ReadLine());
+        System.Console.WriteLine("Informe o sálario do funcionário:");
+        double SalarioMensal = Convert.ToInt32(Console.ReadLine());
+        Funcionario funcionario = new FuncionarioTempoIntegral(Nome, Matricula, SalarioMensal);
+        empresa.AdicionarFuncionario(funcionario);
+        
     case 2:
 
     case 3:
