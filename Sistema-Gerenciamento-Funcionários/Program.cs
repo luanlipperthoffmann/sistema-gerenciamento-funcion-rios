@@ -1,2 +1,29 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Empresa empresa = new Empresa();
+
+
+System.Console.WriteLine("SISTEMA DE GERENCIAMENTO DE FUNCIONÁRIOS");
+System.Console.WriteLine("SELECIONE A OPÇÃO DESEJADA:");
+System.Console.WriteLine("1. Adicionar um funcionário de tempo integral");
+System.Console.WriteLine("2. Adicionar um funcionário de meio periodo");
+System.Console.WriteLine("3. Remover um funcionário");
+System.Console.WriteLine("4. Exibir  informações de todos os funcionários");
+System.Console.WriteLine("5. Adicionar projeto(s) a um funcionário");
+System.Console.WriteLine("6. Sair do programa");
+System.Console.WriteLine("Selecione a opção desejada:");
+int opcao = Convert.ToInt32(Console.ReadLine());
+
+switch (opcao >=1 || opcao <=6)
+{
+    case 1:
+        FuncionarioTempoIntegral
+    case 2:
+
+    case 3:
+
+    case 4:
+
+    case 5:
+
+    case 6:
+
+}
