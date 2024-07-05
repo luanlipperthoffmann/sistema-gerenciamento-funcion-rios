@@ -9,22 +9,21 @@ public class Empresa
 
     public void RemoverFuncionario(int Matricula)
     {
-        foreach (Funcionario funcionario in Funcionarios)
+        for (int i=0; i <Funcionarios.Count; i++)
         {
-            if (Matricula == funcionario.Matricula)
+            if (Funcionarios [i].Matricula == Matricula)
             {
-                Funcionarios.Remove(funcionario);
-                System.Console.WriteLine("Funcionario removido");
+                Funcionarios.RemoveAt(i);
             }
         }
     }
 
     public void ExibirFuncionarios()
     {
+        System.Console.WriteLine("OS FUNCIONÁRIO DA LISTA ATUAL SÃO:");
         foreach(var Funcionario in Funcionarios)
         {
-            System.Console.WriteLine($"Os funcionarios da lista atual são: {Funcionario}");
+            System.Console.WriteLine($"Matricula: {Funcionario.Matricula}, Nome: {Funcionario.Nome}, Sálario: {Funcionario.CalcularSalario()}");
         }
-        
     }
 }

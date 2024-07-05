@@ -2,7 +2,6 @@ public abstract class Funcionario
 {
     public string Nome;
     public int Matricula;
-    public double Salario;
 
     public Funcionario(string Nome, int Matricula)
     {
@@ -10,18 +9,20 @@ public abstract class Funcionario
         this.Matricula = Matricula;
     }
 
-    public double CalcularSalario()
-    {
-        return Salario;
-    }
+    public abstract double CalcularSalario();
 
-    public void ExibirInformacoes()
-    {
-        System.Console.WriteLine($"Nome: {Nome}; \nMatricula: {Matricula}; \nSálario: {Salario}");
-    }
+    public abstract void ExibirInformacoes();
 
-    public void AdicionarProjeto()
+    public static string AdicionarProjeto(string Projeto)
+    {
+        List<string> Projetos = new List<string>();
+        Projetos.Add(Projeto);
+        return "Pojeto Adicionado com Sucesso";
+    }
+    public static string AdicionarProjeto(List<string> Projetos)
     {
         List<string> Projeto = new List<string>();
+        Projeto.Add(Projetos.ToString());
+        return "Pojeto Adicionado com Sucesso";
     }
 }

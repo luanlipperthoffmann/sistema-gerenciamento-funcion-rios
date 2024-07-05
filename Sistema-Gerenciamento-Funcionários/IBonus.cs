@@ -1,4 +1,4 @@
 public interface IBonus
 {
-    public void CalcularBonus();
+    public double CalcularBonus();
 }

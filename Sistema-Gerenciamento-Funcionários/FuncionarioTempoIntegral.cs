@@ -1,28 +1,23 @@
-public class FuncionarioTempoIntegral : Funcionario
+public class FuncionarioTempoIntegral : Funcionario, IBonus
 {
-    private double SalarioMensal;
-    public new string Nome;
-    public new int Matricula;
-
-    public FuncionarioTempoIntegral(string Nome, int Matricula, double SalarioMensal) : base(Nome, Matricula)
+    private double Salario;
+    public FuncionarioTempoIntegral(string Nome, int Matricula, double Salario) : base(Nome, Matricula)
     {
-        this.Nome = Nome;
-        this.Matricula = Matricula;
-        this.SalarioMensal = SalarioMensal;
+        this.Salario = Salario;
     }
 
-    public new double CalcularSalario()
+    public override double CalcularSalario()
     {
-        return SalarioMensal;
+        return Salario;
     }
 
-    public new void ExibirInformacoes()
+    public override void ExibirInformacoes()
     {
-        System.Console.WriteLine($"Nome: {Nome}; \nMatricula: {Matricula}; \nSálario: {SalarioMensal}");
+        System.Console.WriteLine($"Nome: {Nome}; \nMatricula: {Matricula}; \nSálario: {Salario}");
     }
     
     public double CalcularBonus()
     {
-        return SalarioMensal*0.1;
+        return Salario*0.1;
     }
 }
