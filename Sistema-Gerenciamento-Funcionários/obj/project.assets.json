@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luanl\\Git\\sistema-gerenciamento-funcion-rios\\Sistema-Gerenciamento-Funcionários\\Sistema-Gerenciamento-Funcionários.csproj",
+      "projectUniqueName": "C:\\Users\\luanl\\Git\\sistema-gerenciamento-funcionarios\\Sistema-Gerenciamento-Funcionários\\Sistema-Gerenciamento-Funcionários.csproj",
       "projectName": "Sistema-Gerenciamento-Funcionários",
-      "projectPath": "C:\\Users\\luanl\\Git\\sistema-gerenciamento-funcion-rios\\Sistema-Gerenciamento-Funcionários\\Sistema-Gerenciamento-Funcionários.csproj",
+      "projectPath": "C:\\Users\\luanl\\Git\\sistema-gerenciamento-funcionarios\\Sistema-Gerenciamento-Funcionários\\Sistema-Gerenciamento-Funcionários.csproj",
       "packagesPath": "C:\\Users\\luanl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luanl\\Git\\sistema-gerenciamento-funcion-rios\\Sistema-Gerenciamento-Funcionários\\obj\\",
+      "outputPath": "C:\\Users\\luanl\\Git\\sistema-gerenciamento-funcionarios\\Sistema-Gerenciamento-Funcionários\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
